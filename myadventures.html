@@ -4,30 +4,149 @@
     <meta charset="utf-8">
     <title></title>
       <style>
-        button{color:blue}
-        .adventures{
-          background-color:red;
-          margin: auto;
- width: 50%;
- border: 3px solid green;
- padding: 10px;
- text-align: center;
-   
-        }
-      </style>
+      button{color:blue}
+      .adventures{background-color:red;
+      margin auto;
+      width:50%;
+    padding:10px;
+    text-align: center;
 
+  }
+  .row {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .column img {
+    margin-top: 12px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  </style>
   </head>
-  <body>
-  <div class="adventures">
-        <button type="button" name="button">Sicily</button>
+<body>
+<div class="adventures">
+<button type="button" name ="button">Sicily </button>
+<button type="button" name ="button">Kotor </button>
+<button type="button" name ="button">Dubrovnik </button>
+<button type="button" name ="button">Budapest </button>
+<button type="button" name ="button">London </button>
+</div class="adventures">
 
-    <button type="button" name="button">Kotor</button>
 
-    <button type="button" name="button">Dubrovnik</button>
 
-    <button type="button" name="button">Budapest</button>
 
-    <button type="button" name="button">London</button>
+<div class="row">
+  <div class="column">
+    <img src="londond.JPG">
+    <img src="londonb.JPG">
+    <img src="london123.JPG">
+    <img src="london13.JPG">
+    <img src="london11.JPG">
+    <img src="londonl.JPG">
+    <img src="londonm.JPG">
+  </div>
+  <div class="column">
+    <img src="buda.JPG">
+    <img src="budap.JPG">
+    <img src="budapest.jpg">
+    <img src="budapest1.jpg">
+    <img src="budapest2.jpg">
+    <img src="budapestaaaaa.JPG">
+  </div>
+  <div class="column">
+    <img src="cyp.JPG">
+    <img src="cypr.JPG">
+    <img src="cypru.JPG">
+    <img src="cyprus.jpg">
+    <img src="cypruss.JPG">
+  </div>
+  <div class="column">
+    <img src="sicily.jpg">
+    <img src="sicily1.jpg">
+    <img src="sicily3.jpg">
+    <img src="sicily4.jpg">
+    <img src="taormina.jpg">
+    <img src="etna.jpg">
+  </div>
+  <div class="column">
+    <img src="dubr.jpg">
+    <img src="dubro1.jpg">
+    <img src="dubrov.jpg">
+    <img src="dubro4.jpg">
+    <img src="dubro5.JPG">
+    <img src="dubro6.JPG">
 </div>
+<div class="column">
+  <img src="kotor3.jpg">
+  <img src="mont.jpg">
+  <img src="kotor.jpg">
+  <img src="koto.jpg">
+  <img src="kotor1.jpg">
+  <img src="kotor4.jpg">
+</div>
+</div>
+
+<button onclick="one()">1</button>
+<button onclick="two()">2</button>
+<button onclick="four()">4</button>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a "loop" variable
+var i;
+
+// Full-width images
+function one() {
+ for (i = 0; i < elements.length; i++) {
+   elements[i].style.flex = "100%";
+ }
+}
+
+// Two images side by side
+function two() {
+ for (i = 0; i < elements.length; i++) {
+   elements[i].style.flex = "50%";
+ }
+}
+
+// Four images side by side
+function four() {
+ for (i = 0; i < elements.length; i++) {
+   elements[i].style.flex = "25%";
+ }
+}
+</script> 
+
+
+
+
+
+
+
   </body>
+
 </html>
