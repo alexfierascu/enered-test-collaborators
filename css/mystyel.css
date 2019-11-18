@@ -1,0 +1,35 @@
+h1 {
+  text-align: center;
+  color: white;
+  font-size:40px;
+  font-family:  cursive;
+  background-color:green;
+          margin: auto;
+ width: 50%;
+ border: 3px solid WHite;
+ padding: 10px;
+ text-align: center;
+}
+body{
+  background-color: black
+}
+ul {
+  color:white ;
+  font-size: 25px;
+  font-family: cursive;
+}
+img{
+  border: 3px solid #ddd;
+border-radius: 35px;
+padding: 19px;
+width: 450px;
+
+}
+img{
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+}
+-
