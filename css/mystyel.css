@@ -1,17 +1,25 @@
-h1 {
-  text-align: center;
-  color: white;
-  font-size:40px;
-  font-family:  cursive;
-  background-color:green;
-          margin: auto;
- width: 50%;
- border: 3px solid WHite;
- padding: 10px;
- text-align: center;
+.super{display:inline-block;
+  margin-right:20px;
+  width:300px;
 }
-body{
-  background-color: black
+.super1 {display:inline-block;
+  text-align: center;
+  color: #3333ff;
+  font-size:15px;
+  font-family:  cursive;
+  background-color:#39ac39;
+          margin: auto;
+ width: 63%;
+ border: 2px solid WHite;
+ padding: 1px;
+ text-align: center
+}
+
+body{ background: url(project1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
 }
 ul {
   color:white ;
@@ -32,4 +40,3 @@ img{
     width: 40%;
   }
 }
--
